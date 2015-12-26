@@ -20,7 +20,7 @@ makecachematrix <- function(x = matrix()) {
              getinverse = getinverse)
 }
 
-## The function below calculates the inverse of a matrix but it first checks if the inverse 
+## The function below calculates the inverse of a matrix; it first checks if the inverse 
 ## was already calculated, if so, gets the inverse from the cache and skip the computation.
 cachesolve <- function(x, ...) {
         mi <- x$getinverse()
