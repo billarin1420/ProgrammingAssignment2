@@ -7,12 +7,10 @@
 makecachematrix <- function(x = matrix()) {
         mi <- NULL
         set <- function(y) {
-            print("aca estoy set")
                 x <<- y
                 mi <<- NULL
         }
         get <- function() {
-            print("aca estoy get")
             x
         }
         setinverse <- function(inverse) mi <<- inverse
